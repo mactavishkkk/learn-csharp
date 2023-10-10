@@ -24,17 +24,17 @@ namespace PrimeiroProjeto {
 
             Console.WriteLine("Dados digitados: \n Frase: {0}\n Cor1: {1}\n Cor2: {2}\n Cor3: {3}\n" +
                 "Cores1: {4}\n Cores2: {5}\n Cores3: {6}\n", frase, cor1, cor2, cor3, cores[0], cores[1], cores[2]);
-            
-            Console.WriteLine("Digite um número:")  
+
+            Console.WriteLine("Digite um número:");
             int numero = int.Parse(Console.ReadLine());
-  
-            Console.WriteLine("Digite um caracter:")  
+
+            Console.WriteLine("Digite um caracter:");
             char caractere = char.Parse(Console.ReadLine());
-  
-            Console.WriteLine("Digite um número:")
+
+            Console.WriteLine("Digite um número:");
             double numeroDois = double.Parse(Console.ReadLine()); // 0,00 | CultureInfo.InvariantCulture == 0.00
 
-            Console.WriteLine("Digite o nome, sexo, idade e altura:")
+            Console.WriteLine("Digite o nome, sexo, idade e altura:");
             string[] data = Console.ReadLine().Split(' ');
 
             Console.WriteLine("Dados digitados: \n Número: {0}\n Caracter: {1}\n Numero Dois: {2}\n" +
