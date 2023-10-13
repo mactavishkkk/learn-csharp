@@ -16,6 +16,13 @@ namespace PrimeiroProjeto.Classes {
             Quantidade = quantidade;
         }
 
+        public Product(string nome, double preco) {
+            Nome = nome;
+            Preco = preco;
+        }
+
+        public Product() { }
+
         public double ValorTotalEmEstoque() {
             return Quantidade * Preco;
         }
