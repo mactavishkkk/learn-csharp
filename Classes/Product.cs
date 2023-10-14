@@ -23,28 +23,17 @@ namespace PrimeiroProjeto.Classes {
 
         public Product() { }
 
-        public string GetNome() {
-            return _nome;
+        public string Nome {
+            get { return _nome; }
+            set { _nome = value; }
         }
 
-        public void SetNome(string nome) {
-            _nome = nome;
+        public double Preco {
+            get { return _preco; }
         }
 
-        public double GetPreco() {
-            return _preco;
-        }
-
-        public void SetPreco(double preco) {
-            _preco = preco;
-        }
-
-        public int GetQuantidade() {
-            return _quantidade;
-        }
-
-        public void SetQuantidade(int quantidade) {
-            _quantidade = quantidade;
+        public double Quantidade {
+            get { return _quantidade; }
         }
 
         public double ValorTotalEmEstoque() {
