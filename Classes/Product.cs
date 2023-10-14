@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 namespace PrimeiroProjeto.Classes {
     class Product {
         private string _nome;
-        private double _preco;
-        private int _quantidade;
+        public double Preco { get; private set; }
+        public int Quantidade { get; private set; }
 
         public Product(string nome, double preco, int quantidade) {
             _nome = nome;
-            _preco = preco;
-            _quantidade = quantidade;
+            Preco = preco;
+            Quantidade = quantidade;
         }
 
         public Product(string nome, double preco) {
             _nome = nome;
-            _preco = preco;
+            Preco = preco;
         }
 
         public Product() { }
@@ -28,28 +28,20 @@ namespace PrimeiroProjeto.Classes {
             set { _nome = value; }
         }
 
-        public double Preco {
-            get { return _preco; }
-        }
-
-        public double Quantidade {
-            get { return _quantidade; }
-        }
-
         public double ValorTotalEmEstoque() {
-            return _quantidade * _preco;
+            return Quantidade * Preco;
         }
 
         public void AdicionarProduto(int x) {
-            this._quantidade += x;
+            this.Quantidade += x;
         }
 
         public void RemoverProduto(int x) {
-            this._quantidade -= x;
+            this.Quantidade -= x;
         }
 
         public override string ToString() {
-            return _nome + ", R$" + _preco.ToString("F2") + ", " + _quantidade + " unidades, Total: $" + ValorTotalEmEstoque();
+            return _nome + ", R$" + Preco.ToString("F2") + ", " + Quantidade + " unidades, Total: $" + ValorTotalEmEstoque();
         }
     }
 }
