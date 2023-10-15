@@ -10,16 +10,14 @@ namespace PrimeiroProjeto.Classes {
         private string _nomeTitular;
         private double _saldo;
 
-        public BankAccount(int numeroConta, string nomeTitular, double saldo) {
-            _numeroConta = numeroConta;
-            _nomeTitular = nomeTitular;
-            _saldo = saldo;
-        }
-
         public BankAccount(int numeroConta, string nomeTitular) {
             _numeroConta = numeroConta;
             _nomeTitular = nomeTitular;
             _saldo = 0;
+        }
+
+        public BankAccount(int numeroConta, string nomeTitular, double depositoInicial) : this(numeroConta, nomeTitular) {
+            Deposito(depositoInicial);
         }
 
         public string NomeTitular {

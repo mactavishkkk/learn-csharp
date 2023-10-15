@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace PrimeiroProjeto.Exercises {
     class Constructors {
         static void Main(string[] args) {
+            BankAccount account;
+
             int numeroConta;
             string nomeTitular;
             double valor;
@@ -16,13 +18,14 @@ namespace PrimeiroProjeto.Exercises {
             Console.Write("Entre com o número da conta: "); numeroConta = int.Parse(Console.ReadLine());
             Console.Write("Entre com o nome do titular da conta: "); nomeTitular = Console.ReadLine();
             Console.Write("Deseja fazer um depósito inicial? (S/N) "); depositoInicial = Console.ReadLine();
-            BankAccount account = new BankAccount(numeroConta, nomeTitular);
+            
 
             if (depositoInicial == "S") {
                 Console.Write("Entre com o valor do depósito: "); valor = double.Parse(Console.ReadLine());
-                account.Deposito(valor);
+                account = new BankAccount(numeroConta, nomeTitular, valor);
                 Console.WriteLine(account);
             } else {
+                account = new BankAccount(numeroConta, nomeTitular);
                 Console.WriteLine(account);
             }
 
