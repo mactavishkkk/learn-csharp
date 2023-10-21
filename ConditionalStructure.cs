@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 namespace PrimeiroProjeto {
     class ConditionalStructure {
         static void Main(string[] args) {
-            Console.WriteLine("Digite que horas são: ");
-            int horas = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite que hours são: ");
+            int hours = int.Parse(Console.ReadLine());
 
-            if (horas > 06 && horas < 12)
+            if (hours > 06 && hours < 12)
                 Console.WriteLine("Bom dia!");
 
-            if (horas > 12 && horas < 18) {
+            if (hours > 12 && hours < 18) {
                 Console.WriteLine("Boa Tarde!");
-            } else if (horas > 18 && horas < 06) {
+            } else if (hours > 18 && hours < 06) {
                 Console.WriteLine("Boa Noite!");
             }
         }

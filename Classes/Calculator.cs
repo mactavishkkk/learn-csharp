@@ -9,7 +9,7 @@ namespace PrimeiroProjeto.Classes {
 
         public static double PI = 3.14;
 
-        public static double Circunferencia(double r) {
+        public static double Circumference(double r) {
             return 2.0 * PI * r;
         }
 

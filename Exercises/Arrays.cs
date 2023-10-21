@@ -9,22 +9,22 @@ namespace PrimeiroProjeto.Exercises {
     class Arrays {
         static void Main(string[] args) {
             Console.Write("Quantos quartos serão alugados? ");
-            int numeroQuartos = int.Parse(Console.ReadLine());
+            int roomNumbers = int.Parse(Console.ReadLine());
 
             RentStudent[] renteds = new RentStudent[10];
 
-            for (int i = 0; i < numeroQuartos; i++) {
+            for (int i = 0; i < roomNumbers; i++) {
                 Console.WriteLine("Alugel {0}:", i + 1);
-                Console.Write("Digite o nome do estudante: ");
-                string nome = Console.ReadLine();
+                Console.Write("Digite o name do estudante: ");
+                string name = Console.ReadLine();
 
                 Console.Write("Digite o email do estudante: ");
                 string email = Console.ReadLine();
 
                 Console.Write("Digite o número do quarto de 0 a 9: ");
-                int quarto = int.Parse(Console.ReadLine());
+                int room = int.Parse(Console.ReadLine());
 
-                renteds[quarto] = new RentStudent(nome, email, quarto);
+                renteds[room] = new RentStudent(name, email, room);
             }
 
             Console.WriteLine("Quartos Alugados: ");

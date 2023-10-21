@@ -6,37 +6,37 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Classes {
     class BankAccount {
-        private int _numeroConta;
-        private string _nomeTitular;
-        private double _saldo;
+        private int _numberAccount;
+        private string _titularName;
+        private double _balance;
 
-        public BankAccount(int numeroConta, string nomeTitular) {
-            _numeroConta = numeroConta;
-            _nomeTitular = nomeTitular;
-            _saldo = 0;
+        public BankAccount(int numberAccount, string titularName) {
+            _numberAccount = numberAccount;
+            _titularName = titularName;
+            _balance = 0;
         }
 
-        public BankAccount(int numeroConta, string nomeTitular, double depositoInicial) : this(numeroConta, nomeTitular) {
-            Deposito(depositoInicial);
+        public BankAccount(int numberAccount, string titularName, double initialDeposit) : this(numberAccount, titularName) {
+            Deposit(initialDeposit);
         }
 
-        public string NomeTitular {
-            get { return _nomeTitular; }
-            set { _nomeTitular = value; }
+        public string titularName {
+            get { return _titularName; }
+            set { _titularName = value; }
         }
 
-        public void Deposito(double valor) {
-            _saldo += valor;
+        public void Deposit(double value) {
+            _balance += value;
         }
 
-        public void Saque(double valor) {
-            _saldo -= valor;
-            _saldo -= 5.00;
+        public void WithDraw(double value) {
+            _balance -= value;
+            _balance -= 5.00;
         }
 
         public override string ToString() {
-            return "\nDados da conta: \nConta - " + _numeroConta +
-                ", Titular: " + _nomeTitular + ", Saldo: $ " + _saldo.ToString("F2") + "\n";
+            return "\nDados da conta: \nConta - " + _numberAccount +
+                ", Titular: " + _titularName + ", Saldo: $ " + _balance.ToString("F2") + "\n";
         }
     }
 

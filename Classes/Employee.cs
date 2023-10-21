@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Classes {
     internal class Employee {
-        public string nome;
-        public double salario;
-        public double imposto;
+        public string name;
+        public double salary;
+        public double tax;
 
-        public double SalarioLiquido() {
-            return salario - imposto;
+        public double LiquidSalary() {
+            return salary - tax;
         }
 
-        public void AumentarSalario(double porcentagem) {
-            double aumento = salario * (porcentagem / 100);
-            salario += aumento;
+        public void IncreaseSalary(double porcentagem) {
+            double aumento = salary * (porcentagem / 100);
+            salary += aumento;
         }
 
         public override string ToString() {
-            return "Funcionário: " + nome + " $ " + SalarioLiquido();
+            return "Funcionário: " + name + " $ " + LiquidSalary();
         }
     }
 }

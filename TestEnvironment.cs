@@ -11,18 +11,18 @@ namespace PrimeiroProjeto {
             Product tv = new Product();
 
             Console.WriteLine("Digite os dados do produto: ");
-            Console.Write("Nome: ");  tv.nome = Console.ReadLine();
-            Console.Write("Preço: "); tv.preco = double.Parse(Console.ReadLine());
-            Console.Write("Quantidade: "); tv.quantidade = int.Parse(Console.ReadLine());
+            Console.Write("name: ");  tv.name = Console.ReadLine();
+            Console.Write("Preço: "); tv.Price = double.Parse(Console.ReadLine());
+            Console.Write("Quantage: "); tv.Quantity = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Dados do produto: " + tv);
 
             Console.Write("Digite o número de produtos a serem adicionados: ");
-            tv.AdicionarProduto(int.Parse(Console.ReadLine()));
+            tv.AddProduct(int.Parse(Console.ReadLine()));
             Console.WriteLine("Dados do produto: " + tv);
 
             Console.Write("Digite o número de produtos a serem removidos: ");
-            tv.RemoverProduto(int.Parse(Console.ReadLine()));
+            tv.RemoveProduct(int.Parse(Console.ReadLine()));
             Console.WriteLine("Dados do produto: " + tv);
         }
     }

@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Classes {
     internal class Student {
-        public string nome;
-        public double notaUm, notaDois, notaTres;
+        public string name;
+        public double noteOne, noteTwo, noteThree;
 
-        public double NotaFinal() {
-            return notaUm + notaDois + notaTres;
+        public double FinalNote() {
+            return noteOne + noteTwo + noteThree;
         }
 
-        public double PontosRestantes() {
-            return 60.0 - NotaFinal();
+        public double RemainingPoints() {
+            return 60.0 - FinalNote();
         }
 
         public override string ToString() {
             string status;
 
-            if(NotaFinal() >= 60) {
+            if(FinalNote() >= 60) {
                 status = "APROVADO";
             } else {
-                status = "REPROVADO \nFALTARAM " + PontosRestantes() + " PONTOS";
+                status = "REPROVADO \nFALTARAM " + RemainingPoints() + " PONTOS";
             }
 
-            return "NOTA FINAL = " + NotaFinal() +
+            return "NOTA FINAL = " + FinalNote() +
                     "\n" + status;
         }
     }

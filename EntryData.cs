@@ -7,38 +7,38 @@ using System.Threading.Tasks;
 namespace PrimeiroProjeto {
     internal class EntryData {
         static void Mainoff(string[] args) {
-            Console.WriteLine("Digite uma frase:");
-            string frase = Console.ReadLine();
+            Console.WriteLine("Digite uma phrase:");
+            string phrase = Console.ReadLine();
 
             Console.WriteLine("Digite uma cor:");
-            string cor1 = Console.ReadLine();
+            string colorOne = Console.ReadLine();
 
             Console.WriteLine("Digite outra cor:");
-            string cor2 = Console.ReadLine();
+            string colorTwo = Console.ReadLine();
 
             Console.WriteLine("Digite outra cor:");
-            string cor3 = Console.ReadLine();
+            string colorThree = Console.ReadLine();
 
-            Console.WriteLine("Digite 3 (três) cores:");
-            string[] cores = Console.ReadLine().Split(' ');
+            Console.WriteLine("Digite 3 (três) colors:");
+            string[] colors = Console.ReadLine().Split(' ');
 
-            Console.WriteLine("Dados digitados: \n Frase: {0}\n Cor1: {1}\n Cor2: {2}\n Cor3: {3}\n" +
-                "Cores1: {4}\n Cores2: {5}\n Cores3: {6}\n", frase, cor1, cor2, cor3, cores[0], cores[1], cores[2]);
+            Console.WriteLine("Dados digitados: \n phrase: {0}\n colorOne: {1}\n colorTwo: {2}\n colorThree: {3}\n" +
+                "colors1: {4}\n colors2: {5}\n colors3: {6}\n", phrase, colorOne, colorTwo, colorThree, colors[0], colors[1], colors[2]);
 
             Console.WriteLine("Digite um número:");
-            int numero = int.Parse(Console.ReadLine());
+            int number = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite um caracter:");
-            char caractere = char.Parse(Console.ReadLine());
+            char character = char.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite um número:");
-            double numeroDois = double.Parse(Console.ReadLine()); // 0,00 | CultureInfo.InvariantCulture == 0.00
+            double numberTwo = double.Parse(Console.ReadLine()); // 0,00 | CultureInfo.InvariantCulture == 0.00
 
-            Console.WriteLine("Digite o nome, sexo, idade e altura:");
+            Console.WriteLine("Digite o name, sexo, age e height:");
             string[] data = Console.ReadLine().Split(' ');
 
-            Console.WriteLine("Dados digitados: \n Número: {0}\n Caracter: {1}\n Numero Dois: {2}\n" +
-                "Dados.nome: {4}\n Dados.sexo: {5}\n Dados.idade: {6}\n Dados.altura: {7}\n", numero, caractere, numeroDois, cor3, data[0], data[1], data[2], data[3]);
+            Console.WriteLine("Dados digitados: \n Número: {0}\n Caracter: {1}\n number Dois: {2}\n" +
+                "Dados.name: {4}\n Dados.sexo: {5}\n Dados.age: {6}\n Dados.height: {7}\n", number, character, numberTwo, colorThree, data[0], data[1], data[2], data[3]);
         }
     }
 }

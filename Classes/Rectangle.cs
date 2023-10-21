@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Classes {
     class Rectangle {
-        public double largura;
-        public double altura;
+        public double width;
+        public double height;
 
         public double Area() {
-            return largura * altura;
+            return width * height;
         }
-        public double Perimetro() {
-            return 2 * (largura + altura);
+        public double Perimeter() {
+            return 2 * (width + height);
         }
         public double Diagonal() {
             return Math.Sqrt(
-                Math.Pow(largura, 2) + Math.Pow(altura, 2)
+                Math.Pow(width, 2) + Math.Pow(height, 2)
                 );
         }
     }

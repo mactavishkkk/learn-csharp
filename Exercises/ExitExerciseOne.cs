@@ -4,18 +4,18 @@ using System.Globalization;
 namespace PrimeiroProjeto.Exercises {
     class ExitExerciseOne {
         static void Main(string[] args) {
-            string produto1 = "Computador", produto2 = "Mesa de escritório";
-            byte idade = 30;
-            int codigo = 3290;
-            char genero = 'M';
-            double preco1 = 2100.0, preco2 = 650.50, medida = 53.234567;
+            string productOne = "Computador", productTwo = "Mesa de escritório";
+            byte age = 30;
+            int code = 3290;
+            char gender = 'M';
+            double priceOne = 2100.0, priceTwo = 650.50, measure = 53.234567;
 
             Console.WriteLine("Produtos: ");
-            Console.WriteLine("{0}, cujo preço é $ {1:F2} \n{2}, cujo preço é $ {3:F2}\n", produto1, preco1, produto2, preco2);
-            Console.WriteLine("Registro: {0} anos de idade, código: {1} e gênero: {2}\n", idade, codigo, genero);
-            Console.WriteLine("Medida com oito casas decimais: {0:F8}", medida);
-            Console.WriteLine("Arredondado (três casas decimais): {0:F3}", medida);
-            Console.WriteLine("Separador decimal: {0}", medida.ToString("", CultureInfo.InvariantCulture));
+            Console.WriteLine("{0}, cujo preço é $ {1:F2} \n{2}, cujo preço é $ {3:F2}\n", productOne, priceOne, productTwo, priceTwo);
+            Console.WriteLine("Registro: {0} anos de age, código: {1} e gênero: {2}\n", age, code, gender);
+            Console.WriteLine("measure com oito casas decimais: {0:F8}", measure);
+            Console.WriteLine("Arredondado (três casas decimais): {0:F3}", measure);
+            Console.WriteLine("Separador decimal: {0}", measure.ToString("", CultureInfo.InvariantCulture));
         }
     }
 }

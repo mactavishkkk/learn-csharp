@@ -10,22 +10,22 @@ namespace PrimeiroProjeto {
             int a = 10;
 
             bool conditional = a > 10;
-            bool conditional1 = a < 10;
-            bool conditional2 = a == 10;
-            bool conditional3 = a >= 10;
-            bool conditional4 = a <= 10;
+            bool conditionalOne = a < 10;
+            bool conditionalTwo = a == 10;
+            bool conditionalThree = a >= 10;
+            bool conditionalFour = a <= 10;
 
             Console.WriteLine(conditional);
-            Console.WriteLine(conditional1);
-            Console.WriteLine(conditional2);
-            Console.WriteLine(conditional3);
-            Console.WriteLine(conditional4);
+            Console.WriteLine(conditionalOne);
+            Console.WriteLine(conditionalTwo);
+            Console.WriteLine(conditionalThree);
+            Console.WriteLine(conditionalFour);
 
-            bool conditional5 = a < 10 || a >= 10;
-            bool conditional6 = a < 10 && a >= 10;
+            bool conditionalFive = a < 10 || a >= 10;
+            bool conditionalSix = a < 10 && a >= 10;
 
-            Console.WriteLine(conditional5);
-            Console.WriteLine(conditional6);
+            Console.WriteLine(conditionalFive);
+            Console.WriteLine(conditionalSix);
         }
     }
 }

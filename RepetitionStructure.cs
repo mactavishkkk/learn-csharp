@@ -22,14 +22,14 @@ namespace PrimeiroProjeto {
 
             Console.Write("Digite quantos números inteiros você deseja guardar: ");
             int N = int.Parse(Console.ReadLine());
-            int soma = 0;
+            int sum = 0;
 
             for(int i = 0; i < N; i++) {
                 Console.Write("Valor #{0}:", i + 1);
-                soma += int.Parse(Console.ReadLine());
+                sum += int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine("Soma: " + soma);
+            Console.WriteLine("sum: " + sum);
 
             string[] vect = new string[] { "Maria", "Bob", "Alex" };
 
