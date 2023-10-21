@@ -8,14 +8,14 @@ namespace PrimeiroProjeto.Classes {
     class RentStudent {
         public string Name { get; set; }
         public string Email { get; set; }
-        public int Quarto { get; set; }
+        public int Room { get; set; }
 
         public RentStudent() { }
 
-        public RentStudent(string name, string email, int quarto) {
-            this.Name = name;
+        public RentStudent(string Name, string email, int room) {
+            this.Name = Name;
             this.Email = email;
-            this.Quarto = quarto;
+            this.Room = room;
         }
     }
 }

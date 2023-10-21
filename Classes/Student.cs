@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Classes {
     internal class Student {
-        public string name;
-        public double noteOne, noteTwo, noteThree;
+        public string Name;
+        public double NoteOne, NoteTwo, NoteThree;
 
         public double FinalNote() {
-            return noteOne + noteTwo + noteThree;
+            return NoteOne + NoteTwo + NoteThree;
         }
 
         public double RemainingPoints() {

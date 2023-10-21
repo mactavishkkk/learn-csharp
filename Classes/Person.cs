@@ -1,6 +1,6 @@
 ﻿namespace PrimeiroProjeto.Classes {
     internal class Person {
-        public string nome;
-        public int idade;
+        public string Nome;
+        public int Idade;
     }
 }
