@@ -1,7 +1,7 @@
-﻿using PrimeiroProjeto.Entities.Enums;
+﻿using PrimeiroProjeto.Classes.Order.Enums;
 using System;
 
-namespace PrimeiroProjeto.Entities
+namespace PrimeiroProjeto.Classes.Order
 {
     class Order
     {

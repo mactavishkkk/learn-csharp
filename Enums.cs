@@ -1,5 +1,5 @@
-﻿using PrimeiroProjeto.Entities;
-using PrimeiroProjeto.Entities.Enums;
+﻿using PrimeiroProjeto.Classes.Order;
+using PrimeiroProjeto.Classes.Order.Enums;
 using System;
 
 namespace PrimeiroProjeto

@@ -1,4 +1,4 @@
-﻿namespace PrimeiroProjeto.Entities.Enums
+﻿namespace PrimeiroProjeto.Classes.Order.Enums
 {
     enum OrderStatus : int
     {
