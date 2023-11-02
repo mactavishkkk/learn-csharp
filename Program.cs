@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Globalization;
 
-namespace PrimeiroProjeto {
-    class Program {
-        static void Mainoff(string[] args) {
+namespace PrimeiroProjeto
+{
+    class Program
+    {
+        static void Mainoff(string[] args)
+        {
             char gender = 'F';
             int age = 30;
             double sale = 10.5676;
