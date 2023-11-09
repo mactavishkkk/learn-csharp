@@ -18,5 +18,10 @@ namespace PrimeiroProjeto.Classes.Account
         {
             Balance += Balance * InterestRate;
         }
+
+        public override void Withdraw(double amount)
+        {
+            Balance -= amount;
+        }
     }
 }
