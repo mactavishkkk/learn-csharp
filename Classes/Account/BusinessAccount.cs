@@ -13,8 +13,7 @@
         }
 
         public void Loan(double amount)
-        {
-            if (amount <= LoanLimit) { Balance += amount; }
+              if (amount <= LoanLimit) { Balance += amount; }
         }
     }
 }
