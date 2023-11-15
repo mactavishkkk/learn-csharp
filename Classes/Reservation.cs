@@ -21,6 +21,25 @@
             return (int)duration.TotalDays;
         }
 
+        public string UpdateDates(DateTime checkIn, DateTime checkOut)
+        {
+            DateTime now = DateTime.Now;
+
+            if (checkIn < now || checkOut < now)
+            {
+                return "Data de reserva não podem ser do passado!";
+            }
+
+            if (checkOut <= checkIn)
+            {
+                return "A data de check-out não pode ser menor que a data de check-in";
+            }
+
+            CheckIn = checkIn;
+            CheckOut = checkOut;
+            return null;
+        }
+
         public override string ToString()
         {
             return "Room: " + RoomNumber + ", check-in: " + CheckIn.ToString("dd/MM/yyyy") +
