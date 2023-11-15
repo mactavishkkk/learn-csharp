@@ -1,4 +1,6 @@
-﻿namespace PrimeiroProjeto.Classes
+﻿using PrimeiroProjeto.Classes.Exceptions;
+
+namespace PrimeiroProjeto.Classes
 {
     internal class Reservation
     {
@@ -10,6 +12,11 @@
 
         public Reservation(int roomNumber, DateTime checkIn, DateTime checkOut)
         {
+            if (checkOut <= checkIn)
+            {
+                throw new DomainException("A data de check-out não pode ser menor que a data de check-in");
+            }
+
             RoomNumber = roomNumber;
             CheckIn = checkIn;
             CheckOut = checkOut;
@@ -21,23 +28,21 @@
             return (int)duration.TotalDays;
         }
 
-        public string UpdateDates(DateTime checkIn, DateTime checkOut)
+        public void UpdateDates(DateTime checkIn, DateTime checkOut)
         {
             DateTime now = DateTime.Now;
-
             if (checkIn < now || checkOut < now)
             {
-                return "Data de reserva não podem ser do passado!";
+                throw new DomainException("Data de reserva não podem ser do passado!");
             }
 
             if (checkOut <= checkIn)
             {
-                return "A data de check-out não pode ser menor que a data de check-in";
+                throw new DomainException("A data de check-out não pode ser menor que a data de check-in");
             }
 
             CheckIn = checkIn;
             CheckOut = checkOut;
-            return null;
         }
 
         public override string ToString()
