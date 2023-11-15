@@ -12,7 +12,7 @@
             LoanLimit = loanLimit;
         }
 
-        public void Loan(double amount)
+        public void Loan(double amount) { 
               if (amount <= LoanLimit) { Balance += amount; }
         }
     }
