@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class Lists {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             List<string> list = new List<string>();
 
             List<string> listTwo = new List<string> { "Maria", "Alex", "Bob" };

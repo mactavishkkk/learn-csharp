@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Exercises {
     class Constructors {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             BankAccount account;
 
             int numberAccount;

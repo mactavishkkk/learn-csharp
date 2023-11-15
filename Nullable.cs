@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class Nullable {
-        static void Main(string[] args) {
-            double x = null;
+        static void MainOff(string[] args) {
+            // double x = null;
             Nullable<double> y = null;
             double? z = null;
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Exercises {
     class Arrays {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Console.Write("Quantos quartos serão alugados? ");
             int roomNumbers = int.Parse(Console.ReadLine());
 
@@ -27,11 +27,11 @@ namespace PrimeiroProjeto.Exercises {
                 renteds[room] = new RentStudent(name, email, room);
             }
 
-            Console.WriteLine("Quartos Alugados: ");
-            for (int i = 0; i < renteds.Length; i++) {
-                if (renteds[i] != null)
-                    Console.WriteLine("{0}: {1}, {2}", renteds[i].Quarto, renteds[i].Name, renteds[i].Email);
-            }
+            // Console.WriteLine("Quartos Alugados: ");
+            // for (int i = 0; i < renteds.Length; i++) {
+            //     if (renteds[i] != null)
+            //         Console.WriteLine("{0}: {1}, {2}", renteds[i].Quarto, renteds[i].Name, renteds[i].Email);
+            // }
         }
     }
 }

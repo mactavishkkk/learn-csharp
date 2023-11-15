@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     internal class RepetitionStructure {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Console.Write("Digite um número: ");
             int number = int.Parse(Console.ReadLine());
 

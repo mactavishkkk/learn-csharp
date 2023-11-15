@@ -16,7 +16,7 @@ namespace PrimeiroProjeto {
             }
         }
 
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Console.WriteLine("Digite 3 numeros: ");
             int numberOne = int.Parse(Console.ReadLine());
             int numberTwo = int.Parse(Console.ReadLine());

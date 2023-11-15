@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class ConditionalStructure {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Console.WriteLine("Digite que hours são: ");
             int hours = int.Parse(Console.ReadLine());
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     internal class SpecialTopics {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             // Var
 
             var x = 10;

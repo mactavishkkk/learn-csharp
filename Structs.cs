@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class Structs {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             //Point p; Incorreto
             //Console.WriteLine(p);
 

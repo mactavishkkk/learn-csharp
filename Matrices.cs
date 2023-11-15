@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class Matrices {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             double[,] matrix = new double[2, 3];
 
             Console.WriteLine(matrix.Length); // Total items

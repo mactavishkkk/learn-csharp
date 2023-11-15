@@ -10,7 +10,7 @@ namespace PrimeiroProjeto.Exercises
 {
     class Composition
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
             string name;
             double baseSalary;

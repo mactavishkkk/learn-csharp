@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class ComparativeOperators {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             int a = 10;
 
             bool conditional = a > 10;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Exercises {
     class matrixrixTwo {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Console.Write("Digite o número de linhas da sua matrixriz: ");
             int r = int.Parse(Console.ReadLine());
 

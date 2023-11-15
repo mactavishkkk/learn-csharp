@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Exercises {
     internal class POO {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             //Rectangle rectangle = new Rectangle();
 
             //Console.WriteLine("Digite a width e depois a height de um retângulo: ");
@@ -33,10 +33,10 @@ namespace PrimeiroProjeto.Exercises {
 
             Student student = new Student();
 
-            Console.Write("Digite o name do aluno: "); student.name = Console.ReadLine();
-            Console.Write("Digite a nota do primeiro trimestre: "); student.noteOne = double.Parse(Console.ReadLine());
-            Console.Write("Digite a nota do segundo trimestre: "); student.noteTwo = double.Parse(Console.ReadLine());
-            Console.Write("Digite a nota do terceiro trimestre: "); student.noteThree = double.Parse(Console.ReadLine());
+            // Console.Write("Digite o name do aluno: "); student.name = Console.ReadLine();
+            // Console.Write("Digite a nota do primeiro trimestre: "); student.noteOne = double.Parse(Console.ReadLine());
+            // Console.Write("Digite a nota do segundo trimestre: "); student.noteTwo = double.Parse(Console.ReadLine());
+            // Console.Write("Digite a nota do terceiro trimestre: "); student.noteThree = double.Parse(Console.ReadLine());
 
             Console.WriteLine(student);
         }

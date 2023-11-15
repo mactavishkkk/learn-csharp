@@ -4,9 +4,9 @@ namespace PrimeiroProjeto
 {
     internal class UpDownCasting
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
-            Account account = new Account();
+            // Account account = new Account();
             BusinessAccount businessAccount = new BusinessAccount();
 
             // UP

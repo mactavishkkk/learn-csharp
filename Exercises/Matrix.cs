@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Exercises {
     class Matrix {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Console.Write("Digite o tamanho da sua matriz quadrada: ");
             int n = int.Parse(Console.ReadLine());
 

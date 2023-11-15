@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace PrimeiroProjeto.Exercises {
     class ExitExerciseOne {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             string productOne = "Computador", productTwo = "Mesa de escritório";
             byte age = 30;
             int code = 3290;

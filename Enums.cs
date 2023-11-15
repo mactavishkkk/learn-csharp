@@ -6,7 +6,7 @@ namespace PrimeiroProjeto
 {
     internal class Enums
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
             Order order = new Order { 
                 Id = 1080,

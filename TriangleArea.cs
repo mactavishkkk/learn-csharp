@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     internal class TriangleArea {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Triangle x, y;
 
             x = new Triangle();

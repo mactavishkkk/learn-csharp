@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace PrimeiroProjeto.Exercises {
     class EntryExitExerciseOne {
-        static void Main(string[] args) {
+        static void MainOff(string[] args) {
             Console.WriteLine("Entre com seu name completo: ");
             string name = Console.ReadLine();
 
