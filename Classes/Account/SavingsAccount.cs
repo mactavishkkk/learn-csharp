@@ -1,4 +1,5 @@
-﻿using PrimeiroProjeto.Classes.Order;
+﻿using PrimeiroProjeto.Classes.Exceptions;
+using PrimeiroProjeto.Classes.Order;
 
 namespace PrimeiroProjeto.Classes.Account
 {
@@ -21,6 +22,11 @@ namespace PrimeiroProjeto.Classes.Account
 
         public override void Withdraw(double amount)
         {
+            if (amount > Balance)
+            {
+                throw new DomainException("Saldo suficiente!");
+            }
+
             Balance -= amount;
         }
     }

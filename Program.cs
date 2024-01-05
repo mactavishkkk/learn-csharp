@@ -5,7 +5,7 @@ namespace PrimeiroProjeto
 {
     class Program
     {
-        static void Mainoff(string[] args)
+        static void MainOff(string[] args)
         {
             char gender = 'F';
             int age = 30;

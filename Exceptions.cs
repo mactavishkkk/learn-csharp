@@ -2,7 +2,7 @@
 {
     internal class Exceptions
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
             try
             {
