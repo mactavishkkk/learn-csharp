@@ -7,16 +7,18 @@ namespace PrimeiroProjeto
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\mac\Documents\projetos\PrimeiroProjeto\PrimeiroProjeto\file.txt";
+            string sourcePath = @"C:\Users\mac\Documents\projetos\PrimeiroProjeto\PrimeiroProjeto\fileOne.txt";
+            string targetPath = @"C:\Users\mac\Documents\projetos\PrimeiroProjeto\PrimeiroProjeto\file.txt";
 
             try
             {
-                using (StreamReader SR = File.OpenText(path))
+                string[] lines = File.ReadAllLines(sourcePath);
+
+                using (StreamWriter sw = File.AppendText(targetPath))
                 {
-                    while (!SR.EndOfStream)
+                    foreach (string line in lines)
                     {
-                        string line = SR.ReadLine();
-                        Console.WriteLine(line);
+                        sw.WriteLine(line.ToUpper());
                     }
                 }
 
