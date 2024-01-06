@@ -7,29 +7,18 @@ namespace PrimeiroProjeto
     {
         static void Main(string[] args)
         {
-            string sourcePath = @"C:\Users\mac\Documents\projetos\design-armazonico";
+            string path = @"C:\Users\mac\Documents\projetos\design-armazonico\artefatos.txt";
 
             try
             {
-                var folders = Directory.EnumerateDirectories(sourcePath, "*.*", SearchOption.AllDirectories);
-                Console.WriteLine("Folders: ");
-                foreach (string folder in folders)
-                {
-                    Console.WriteLine(folder);
-                }
-
-                Console.WriteLine();
-
-                var files = Directory.EnumerateFiles(sourcePath, "*.*", SearchOption.AllDirectories);
-                Console.WriteLine("Files: ");
-                foreach (string file in files)
-                {
-                    Console.WriteLine(file);
-                }
-
-                Console.WriteLine();
-
-                Directory.CreateDirectory(sourcePath + @"\newFolder\file.txt");
+                Console.WriteLine("DirectorySeparatorChar: " + Path.DirectorySeparatorChar);
+                Console.WriteLine("PathSeparator: " + Path.PathSeparator);
+                Console.WriteLine("GetDirectoryName: " + Path.GetDirectoryName(path));
+                Console.WriteLine("GetFileName: " + Path.GetFileName(path));
+                Console.WriteLine("GetFileNameWithoutExtension: " + Path.GetFileNameWithoutExtension(path));
+                Console.WriteLine("GetExtension: " + Path.GetExtension(path));
+                Console.WriteLine("GetFullPath: " + Path.GetFullPath(path));
+                Console.WriteLine("GetTempPath: " + Path.GetTempPath());
 
             } catch (IOException e)
             {
