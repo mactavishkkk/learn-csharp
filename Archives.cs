@@ -7,20 +7,29 @@ namespace PrimeiroProjeto
     {
         static void Main(string[] args)
         {
-            string sourcePath = @"C:\Users\mac\Documents\projetos\PrimeiroProjeto\PrimeiroProjeto\fileOne.txt";
-            string targetPath = @"C:\Users\mac\Documents\projetos\PrimeiroProjeto\PrimeiroProjeto\file.txt";
+            string sourcePath = @"C:\Users\mac\Documents\projetos\design-armazonico";
 
             try
             {
-                string[] lines = File.ReadAllLines(sourcePath);
-
-                using (StreamWriter sw = File.AppendText(targetPath))
+                var folders = Directory.EnumerateDirectories(sourcePath, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("Folders: ");
+                foreach (string folder in folders)
                 {
-                    foreach (string line in lines)
-                    {
-                        sw.WriteLine(line.ToUpper());
-                    }
+                    Console.WriteLine(folder);
                 }
+
+                Console.WriteLine();
+
+                var files = Directory.EnumerateFiles(sourcePath, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("Files: ");
+                foreach (string file in files)
+                {
+                    Console.WriteLine(file);
+                }
+
+                Console.WriteLine();
+
+                Directory.CreateDirectory(sourcePath + @"\newFolder\file.txt");
 
             } catch (IOException e)
             {
