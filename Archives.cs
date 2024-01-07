@@ -5,7 +5,7 @@ namespace PrimeiroProjeto
 {
     internal class Archives
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
             string path = @"C:\Users\mac\Documents\projetos\design-armazonico\artefatos.txt";
 
