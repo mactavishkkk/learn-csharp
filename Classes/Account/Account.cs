@@ -34,7 +34,7 @@ namespace PrimeiroProjeto.Classes.Account
 
         public void Deposit(double amount)
         {
-            if(amount <= 0)
+            if (amount <= 0)
             {
                 throw new DomainException("Você não pode depositar um valor <= á 0!");
             }

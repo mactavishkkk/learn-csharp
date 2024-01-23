@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "y3RsyxkBpFZWuc11XA68uBvoXKUsoZjzjJB+oib1FB4c/navXyKANXW1mvs2/O3y6K+idAPth1PDa8H9Rps4vg==",
+  "dgSpecHash": "d7AmdZcx2TYm64cf1MNwSsycSuvgxLHJcov/HXD/Jt6wet5wWjZ3pRWeceaqt84a5L7ObaebL9bmhD2a1UAbEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mac\\Documents\\projetos\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/mac/learn-csharp/PrimeiroProjeto.csproj",
+  "expectedPackageFiles": [
+    "/home/mac/.nuget/packages/microsoft.netcore.app.ref/6.0.26/microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "/home/mac/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.26/microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "/home/mac/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.26/microsoft.netcore.app.host.linux-x64.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -17,7 +17,8 @@
             double taxe = 0.0;
 
             if (NumberEmployees > 10)
-            { taxe = 0.14; } else { taxe = 0.16; }
+            { taxe = 0.14; }
+            else { taxe = 0.16; }
 
             return AnnualIncome * taxe;
         }

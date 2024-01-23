@@ -13,7 +13,7 @@ namespace PrimeiroProjeto.Classes
             }
 
             Client other = obj as Client;
-            return Email.Equals(obj.Email);
+            return Email.Equals(other.Email);
         }
 
         public override int GetHashCode()

@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Globalization;
 
-namespace PrimeiroProjeto.Exercises {
-    class ExitExerciseOne {
-        static void MainOff(string[] args) {
+namespace PrimeiroProjeto.Exercises
+{
+    class ExitExerciseOne
+    {
+        static void MainOff(string[] args)
+        {
             string productOne = "Computador", productTwo = "Mesa de escritório";
             byte age = 30;
             int code = 3290;

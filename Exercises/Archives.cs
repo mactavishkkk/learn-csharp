@@ -39,7 +39,8 @@ namespace PrimeiroProjeto.Exercises
                         }
                     }
 
-                } else
+                }
+                else
                 {
                     Console.WriteLine("Arquivo já existe!");
                     Console.WriteLine("GetFileName: " + Path.GetFileName(path));
@@ -79,7 +80,8 @@ namespace PrimeiroProjeto.Exercises
                     }
                 }
 
-            } catch (IOException e)
+            }
+            catch (IOException e)
             {
                 Console.WriteLine("An error occurred");
                 Console.WriteLine(e.Message);

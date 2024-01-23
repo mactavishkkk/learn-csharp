@@ -4,14 +4,14 @@ namespace PrimeiroProjeto.Services
 {
   class PrintService<T>
   {
-    private T[] = _values = new T[10];
+    private T[] _values = new T[10];
     private int _count = 0;
 
     public void AddValue(T value)
     {
       if (_count == 10)
       {
-        throw new InvalidOperationException("This list is full")
+        throw new InvalidOperationException("This list is full");
       }
       _values[_count] = value;
       _count++;

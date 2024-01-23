@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace PrimeiroProjeto.Services
 {
@@ -8,15 +9,15 @@ namespace PrimeiroProjeto.Services
         {
             if (list.Count == 0)
             {
-                throw new ArgumentException("The list can not be empty");
+                throw new ArgumentException("The list cannot be empty");
             }
 
             G max = list[0];
             for (int i = 1; i < list.Count; i++)
             {
-                if (list[i]CompareTo(max) > 0)
+                if (list[i].CompareTo(max) > 0)
                 {
-                    max = list[i]
+                    max = list[i];
                 }
             }
 

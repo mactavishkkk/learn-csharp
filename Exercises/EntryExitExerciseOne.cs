@@ -1,9 +1,12 @@
 using System;
 using System.Globalization;
 
-namespace PrimeiroProjeto.Exercises {
-    class EntryExitExerciseOne {
-        static void MainOff(string[] args) {
+namespace PrimeiroProjeto.Exercises
+{
+    class EntryExitExerciseOne
+    {
+        static void MainOff(string[] args)
+        {
             Console.WriteLine("Entre com seu name completo: ");
             string name = Console.ReadLine();
 
@@ -16,7 +19,7 @@ namespace PrimeiroProjeto.Exercises {
             Console.WriteLine("Entre com seu último name, idade e altura(mesma linha):");
             string[] data = Console.ReadLine().Split(' ');
 
-            Console.WriteLine("Dados Digitados:\n name: {0}\n Quartos: {1}\n Preço: {2:F2}\n" + 
+            Console.WriteLine("Dados Digitados:\n name: {0}\n Quartos: {1}\n Preço: {2:F2}\n" +
               "Dados.name: {3}\n Dados.idade: {4}\n Dados.altura: {5}\n", name, room, price, data[0], data[1], data[2]);
         }
     }

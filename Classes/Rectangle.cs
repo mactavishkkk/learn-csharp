@@ -5,18 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PrimeiroProjeto.Classes {
-    class Rectangle {
+namespace PrimeiroProjeto.Classes
+{
+    class Rectangle
+    {
         public double Width;
         public double Height;
 
-        public double Area() {
+        public double Area()
+        {
             return Width * Height;
         }
-        public double Perimeter() {
+        public double Perimeter()
+        {
             return 2 * (Width + Height);
         }
-        public double Diagonal() {
+        public double Diagonal()
+        {
             return Math.Sqrt(
                 Math.Pow(Width, 2) + Math.Pow(Height, 2)
                 );

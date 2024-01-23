@@ -5,15 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PrimeiroProjeto.Exercises {
-    class Arrays {
-        static void MainOff(string[] args) {
+namespace PrimeiroProjeto.Exercises
+{
+    class Arrays
+    {
+        static void MainOff(string[] args)
+        {
             Console.Write("Quantos quartos serão alugados? ");
             int roomNumbers = int.Parse(Console.ReadLine());
 
             RentStudent[] renteds = new RentStudent[10];
 
-            for (int i = 0; i < roomNumbers; i++) {
+            for (int i = 0; i < roomNumbers; i++)
+            {
                 Console.WriteLine("Alugel {0}:", i + 1);
                 Console.Write("Digite o name do estudante: ");
                 string name = Console.ReadLine();

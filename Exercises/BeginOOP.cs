@@ -1,8 +1,11 @@
 ﻿using PrimeiroProjeto.Classes;
 
-namespace PrimeiroProjeto.Exercises {
-    internal class BeginOOP {
-        static void MainOff(string[] args) {
+namespace PrimeiroProjeto.Exercises
+{
+    internal class BeginOOP
+    {
+        static void MainOff(string[] args)
+        {
             Person person = new Person();
             // Employee employee = new Employee();
 

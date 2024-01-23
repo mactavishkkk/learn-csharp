@@ -21,7 +21,8 @@
             { healthTaxe = HealthExpenditures * 0.50; }
 
             if (AnnualIncome < 20000.00)
-            { taxe = 0.15; } else { taxe = 0.25; }
+            { taxe = 0.15; }
+            else { taxe = 0.25; }
 
             return (AnnualIncome * taxe) - healthTaxe;
         }

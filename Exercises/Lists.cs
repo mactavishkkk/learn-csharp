@@ -5,15 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PrimeiroProjeto.Exercises {
-    internal class Lists {
-        static void MainOff(string[] args) {
+namespace PrimeiroProjeto.Exercises
+{
+    internal class Lists
+    {
+        static void MainOff(string[] args)
+        {
             Console.Write("Quantos funcionários você deseja registrar? ");
             int n = int.Parse(Console.ReadLine());
 
             // List<Employee> employees = new List<Employee>();
 
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < n; i++)
+            {
                 Console.WriteLine("\n");
                 Console.WriteLine("Funcionário #{0}", i + 1);
 

@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PrimeiroProjeto.Classes {
-    struct Point {
+namespace PrimeiroProjeto.Classes
+{
+    struct Point
+    {
         public double X, Y;
 
-        public override string ToString() {
+        public override string ToString()
+        {
             return "(" + X + ", " + Y + ")";
         }
     }
