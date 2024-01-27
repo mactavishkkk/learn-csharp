@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     internal class EntryData {
-        static void Mainoff(string[] args) {
+        static void MainOff(string[] args) {
             Console.WriteLine("Digite uma phrase:");
             string phrase = Console.ReadLine();
 

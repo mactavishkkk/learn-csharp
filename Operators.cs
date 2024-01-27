@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class Operators {
-        static void Mainoff(string[] args) {
+        static void MainOff(string[] args) {
             int n1 = 3 + 4 * 2;
             int n2 = (3 + 4) * 2;
             int n3 = 17 % 3;

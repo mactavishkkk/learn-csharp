@@ -6,7 +6,7 @@ namespace PrimeiroProjeto.Exercises
 {
     internal class Archives
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
             string path = @"C:\Users\mac\Documents\projetos\PrimeiroProjeto\PrimeiroProjeto\OtherFiles\products_input.csv";
             string targetPath = @"C:\Users\mac\Documents\projetos\PrimeiroProjeto\PrimeiroProjeto\OtherFiles\products_output.csv";

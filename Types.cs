@@ -2,7 +2,7 @@
 
 namespace PrimeiroProjeto {
     class Types {
-        static void Mainoff(string[] args) {
+        static void MainOff(string[] args) {
             sbyte x = 10;
 
             Console.WriteLine(x);

@@ -5,7 +5,7 @@ namespace PrimeiroProjeto
 {
   class Generics
   {
-    static void Main(string[] args)
+    static void MainOff(string[] args)
     {
       PrintService<int> printService = new PrintService<int>();
 

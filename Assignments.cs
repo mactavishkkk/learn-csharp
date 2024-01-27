@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     class Assignments {
-        static void Mainoff(string[] args) {
+        static void MainOff(string[] args) {
             int number = 10;
 
             number += 2;
