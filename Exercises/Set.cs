@@ -4,7 +4,7 @@ namespace PrimeiroProjeto.Exercises
 {
     internal class Set
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
             HashSet<LogRegister> set = new HashSet<LogRegister>();
 
