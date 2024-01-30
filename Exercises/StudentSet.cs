@@ -2,7 +2,7 @@
 {
     internal class StudentSet
     {
-        static void Main(string[] args)
+        static void MainOff(string[] args)
         {
             HashSet<int> courseA = new HashSet<int>();
 
