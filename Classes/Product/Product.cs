@@ -2,17 +2,14 @@
 {
     internal class Product
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+        public Category Category { get; set; }
 
-        public Product() { }
-
-        public Product(string name, double price) { Name = name; Price = price; }
-
-
-        public virtual string PriceTag()
+        public override string ToString()
         {
-            return Name + " $" + Price;
+            return "Id: " + Id + ", Name: " + Name + ", Price: " + Price + " | " + Category.Name + " - " + Category.Tier;
         }
     }
 }
