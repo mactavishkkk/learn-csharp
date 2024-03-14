@@ -28,6 +28,15 @@ namespace PrimeiroProjeto
             var resultThree = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, Category = p.Category.Name });
             Print("Only initial 'C' and name, price and category", resultThree);
 
+            var resultFour = products.Where(p => p.Id == 3).Single(); // if p == null ?? Exception
+            var resultFeve = products.Where(p => p.Id == 3).SingleOrDefault(); // if p == null ?? null
+
+            var resultMax = products.Max(p => p.Price);
+            Console.WriteLine("Max product price: " + resultMax);
+
+            var resultMin = products.Min(p => p.Price);
+            Console.WriteLine("Max product price: " + resultMin);
+
         }
 
         static void Print<T>(string message, IEnumerable<T> collection)
