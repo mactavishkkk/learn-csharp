@@ -19,14 +19,17 @@ namespace PrimeiroProjeto
                 new Product() { Id = 6, Name = "hat", Price = 30.0, Category = c3 },
             };
 
-            var result = products.Where(p => p.Category.Tier == 1 && p.Price < 900);
+            //var result = products.Where(p => p.Category.Tier == 1 && p.Price < 900);
+            var result = from p in products where p.Category.Tier == 1 && p.Price < 900 select p;
             Print("Tier 1 and Price < 900", result);
 
-            var resultOne = products.Where(p => p.Category.Name == "tools").Select(p => p.Name);
+            //var resultOne = products.Where(p => p.Category.Name == "tools").Select(p => p.Name);
+            var resultOne = from p in products where p.Category.Name == "tools" select p.Name;
             Print("Only name from tools", resultOne);
 
-            var resultThree = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, Category = p.Category.Name });
-            Print("Only initial 'C' and name, price and category", resultThree);
+            //var resultThree = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, Category = p.Category.Name });
+            var resultTwo = from p in products where p.Name[0] == 'C' select new { p.Name, p.Price, CategoryName = p.Category.Name };
+            Print("Only initial 'C' and name, price and category", resultTwo);
 
             var resultFour = products.Where(p => p.Id == 3).Single(); // if p == null ?? Exception
             var resultFeve = products.Where(p => p.Id == 3).SingleOrDefault(); // if p == null ?? null
